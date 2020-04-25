@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="container-fluid">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <!-- Brand -->
             <a class="navbar-brand" href="#">
-               JAVA 44기</a>
-asdasd
+                JAVA 44기</a>
             <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -40,46 +41,119 @@ asdasd
 
                     </div>
                 </li>
+
+
             </ul>
-        <!-- input group을 사용해서 하나의 그룹으로 표현-->
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+
+            <!-- input group을 사용해서 하나의 그룹으로 표현-->
+            <script src='https://kit.fontawesome.com/a076d05399.js'></script>
             <div class="input-group " style="width: 300px; margin-left: 20px; ">
                 <input type="text" class="form-control" placeholder="검색">
                 <div class="input-group-append">
-                    <button class="btn btn-success" type="submit">
-                        <span class="glyphicon glyphicon-search"></span>
+                    <button class="btn btn-light" type="submit">
+                        <i class='fas fa-search' style='font-size:20px'></i>
                     </button>
                 </div>
             </div>
+
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">회원가입</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">로그인</a>
+                </li>
+            </ul>
         </nav>
-    <table >
-        <thead>
-            <h2>게시판 <small>-이런저런 기능이 있는 게시판입니다.</small></h2>
-        </thead>
-        <tbody class="table table-striped table-bordered table-hover">
-            <tr >
-                <td>번호</td>
-                <td>제목</td>
-                <td>작성자</td>
-                <td>작성일</td>
-                <td>조회수</td>
-                <td>첨부</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>제목입니다</td>
-                <td>길똥이</td>
-                <td>2020-04-24</td>
-                <td>99</td>
-                <td>icon</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+
+        <div class="row">
+            <div class="col-3">
+                <!--  현재메뉴명 -->
+            </div>
+            <div class="col-9">
+                <h2>게시판 <small>-이런저런 기능이 있는 게시판입니다.</small></h2><br>
+                <div>
+                    <div class="dropdown" style="display: inline-block;">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">제목
+                        </button> </div>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">작성자</a></div>
+                    <div class="input-group " style="width: 300px; margin-left: 20px; display: inline-block; ">
+                        <input type="text" class="form-control"></div>
+                    <div class="input-group-append" style="display: inline-block;">
+                        <button class="btn btn-light" type="submit">
+                            <i class='fas fa-search' style='font-size:20px'></i>
+                        </button> </div>
+                </div>
+
+
+                <table class="table table-striped table-bordered table-hover ">
+                    <thead>
+                        <tr class="table-success">
+                            <td>번호</td>
+                            <td>제목</td>
+                            <td>작성자</td>
+                            <td>작성일</td>
+                            <td>조회수</td>
+                            <td>첨부</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td>icon</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td>icon</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td>icon</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+    
 </body>
+
 </html>
