@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework.html</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#">
+                <img src="  http://www.ikosmo.co.kr/images/common/logo_center_v2.jpg"
+                    style="width: 200px; height: 50px;"></a>
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">홈으로</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">회원제게시판</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">자료실</a>
+                </li>
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        임시Menu
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">가입인사</a>
+                        <a class="dropdown-item" href="#">출석체크</a>
+                        <a class="dropdown-item" href="#">자유게시판</a>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- input group을 사용해서 하나의 그룹으로 표현-->
+            <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+            <div class="input-group " style="width: 300px; margin-left: 20px; ">
+                <input type="text" class="form-control" placeholder="검색">
+                <div class="input-group-append">
+                    <button class="btn btn-light btn-outline-secondary" type="submit">
+                        <i class='fas fa-search' style='font-size:20px'></i>
+                    </button>
+                </div>
+            </div>
+
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class='fas fa-user-alt'></i>회원가입 </a>
+
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class='fas fa-lock-open' style='font-size:16px'></i>로그인</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="col-3">
+                <!--  현재메뉴명 --> <br>
+                <div class="bg-success justify-content-center;" id="rect" style="height: 130px; border-radius:20px; 
+                font-size: 2em; padding-top: 45px;  text-align: center;  
+                color: white;">
+                    현재메뉴명
+                </div>
+
+                <ul class="navbar-nav ml-3">
+                    <li class="nav-item"> <a class="nav-link" href="#">회원제게시판</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="#">자료실</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            임시Menu
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">가입인사</a>
+                            <a class="dropdown-item" href="#">출석체크</a>
+                            <a class="dropdown-item" href="#">자유게시판</a>
+
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-9">
+                <br>
+                <h2>게시판 <small><small>-이런저런 기능이 있는 게시판입니다.</small></small></h2><br>
+                <div class="row" style="margin-left: 40em; margin-bottom: 2em;">
+                    <select name="cars" class="custom-select" style="width: 150px;">
+                        <option selected>제목</option>
+                        <option value="내용">내용</option>
+                        <option value="작성자">작성자</option>
+                    </select>
+                    <div class="input-group " style="width: 300px; margin-left: 5px; ">
+                        <input type="text" class="form-control"></div>
+                    <div class="input-group-append">
+                        <button class=" btn  btn-outline-secondary" type="submit">
+                            <i class='fas fa-search' style='font-size:20px'></i>
+                        </button> </div>
+                    <br>
+                </div>
+
+
+                <table class="table table-striped table-bordered table-hover ">
+                    <thead>
+                        <tr class="table-success">
+                            <td>번호</td>
+                            <td>제목</td>
+                            <td>작성자</td>
+                            <td>작성일</td>
+                            <td>조회수</td>
+                            <td>첨부</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td><i class="material-icons" style="font-size:20px">attach_file</i></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td><i class="material-icons" style="font-size:20px">attach_file</i></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td><i class="material-icons" style="font-size:20px">attach_file</i></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td><i class="material-icons" style="font-size:20px">attach_file</i></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td><i class="material-icons" style="font-size:20px">attach_file</i></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>제목입니다</td>
+                            <td>길똥이</td>
+                            <td>2020-04-24</td>
+                            <td>99</td>
+                            <td><i class="material-icons" style="font-size:20px">attach_file</i></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="row">
+        <div class="col-3">
+            <div style="margin-top: 150px; margin-left: 20px;">
+                박진슬<sup>TM</sup></div>
+
+        </div>
+        <div class="col-9">
+            <div style="margin-left: 20em;">
+                <button type="button" class="btn btn-light">Reset</button>
+                <button type="button" class="btn btn-outline-secondary">글쓰기</button>
+                <button type="button" class="btn btn-primary">수정하기</button>
+                <button type="button" class="btn btn-success">삭제하기</button>
+                <button type="button" class="btn btn-info">답글쓰기</button>
+                <button type="button" class="btn btn-warning text-white">리스트보기</button>
+                <button type="button" class="btn btn-danger">전송하기</button>
+            </div>
+            <br>
+
+            <ul class="pagination justify-content-center"
+                style="margin-left: 7em; margin-bottom: 1em; margin-top: 1em; margin-right: 3em;">
+                <br>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class='far fa-hand-point-left'
+                            style='font-size:16px'></i></a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class="material-icons"
+                            style="font-size:16px">skip_previous</i></a></li>
+                <li class="page-item "><a class="page-link" href="javascript:void(0);">1</a></li>
+                <li class="page-item  active"><a class="page-link" href="javascript:void(0);">2</a></li>
+                <li class="page-item "><a class="page-link" href="javascript:void(0);">3</a></li>
+                <li class="page-item "><a class="page-link" href="javascript:void(0);">4</a></li>
+                <li class="page-item "><a class="page-link" href="javascript:void(0);">5</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class="material-icons"
+                            style="font-size:16px">skip_next</i></a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);"><i class='far fa-hand-point-right'
+                            style='font-size:16px'></i></a></li>
+                <br>
+            </ul>
+
+
+            <div style="text-align: center;">
+                Email : 본인이멜주소@naver.com Mobile : 본인연락처 Address : 본인주소 <br>
+                copyright &copy 2019 한국소프트웨어인재개발원.All right reserved.</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
